@@ -1,0 +1,164 @@
+/* Add here all your CSS customizations */
+pricing-table {
+    width:800px ;
+}
+
+
+/* Pricing Tables */
+
+
+
+.pricing-table.pricing-table-style-2 table td, .pricing-table.pricing-table-style-2 table th {
+	border: 0;
+	border: 1px solid  #969696;
+	text-align: left;
+    background: #EDEDEE;
+    
+}
+
+.pricing-table.pricing-table-style-2 table td {
+	border: 1px solid  #969696;
+    background: #fff;
+    width:300px;
+}
+
+.pricing-table.pricing-table-style-2 table td:first-child {
+	text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    background: #fff;
+    width: 200px;
+}
+
+/*.pricing-table.pricing-table-style-2 table tbody tr:nth-of-type(2n+1) {
+	background: rgba(0, 0, 0, 0.02);
+}*/
+
+.pricing-table.pricing-table-style-2 table thead tr th {
+	vertical-align: center;
+	border: 1px solid #969696;
+	background: #EDEDEE;
+}
+
+.pricing-table.pricing-table-style-2 table thead tr th:first-child {
+	
+	background: #EDEDEE;
+}
+
+.pricing-table.pricing-table-style-2 table tr:last-child {
+	background: #EDEDEE;!important;
+}
+
+.pricing-table.pricing-table-style-2 table tr:last-child td {
+	border: 1px solid #969696;
+	
+}
+
+.pricing-table.pricing-table-style-2 table tr:last-child td.plan-action {
+	border: 1px solid #969696;
+}
+
+.pricing-table.pricing-table-style-2 .plan.plan-most-popular {
+	position: relative;
+}
+
+@media (min-width: 992px) {
+	.pricing-table.pricing-table-style-2 .plan.plan-most-popular {
+		margin-top: -0.8rem;
+	}
+}
+
+.pricing-table.pricing-table-style-2 .plan.plan-most-popular .plan-title h3, .pricing-table.pricing-table-style-2 .plan.plan-most-popular .plan-title em {
+	color: #969696;
+    background: #EDEDEE;
+}
+
+/* Tabs */
+.nav-tabs {
+	border-bottom: 1px solid #e1e1e1;
+    justify-content: center;
+}
+
+.nav-tabs .nav-item .nav-link {
+	border: none;
+    column-width: 200px;
+	background: transparent;
+    margin:0px 20px 0px 20px;
+	padding: 20.8px;
+	padding: 1.3rem;
+	font-size: 1.1em;
+	position: relative;
+	overflow: hidden;
+	font-family: "Montserrat", sans-serif;
+	border-radius: 0;
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-item .nav-link:after {
+	height: 4px;
+	width: 100%;
+	content: ' ';
+	background-color: #000;
+	display: block;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+	color: #1c1f21;
+}
+
+.nav-tabs .nav-item .nav-link.active:after {
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+
+.nav-tabs.nav-tabs-centered {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.nav-tabs.nav-tabs-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.nav-tabs.nav-tabs-minimal {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-bottom: 0;
+}
+
+.nav-tabs.nav-tabs-vertical {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-bottom: 0;
+	border-right: 1px solid #e1e1e1;
+}
+
+.nav-tabs.nav-tabs-vertical .nav-item .nav-link {
+	padding-left: 0;
+}
+
+.nav-tabs.nav-tabs-vertical .nav-item .nav-link:after {
+	height: 100%;
+	width: 4px;
+	left: auto;
+	right: -4px;
+	bottom: 0;
+}
+
+.nav-tabs.nav-tabs-vertical .nav-item .nav-link.active:after {
+	-webkit-transform: translateX(-3px);
+	transform: translateX(-3px);
+}
